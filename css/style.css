@@ -17,6 +17,7 @@ header{
     left: 0;
     top: 0;
     width: 100%;
+    z-index: 99;
 }
 
 .headercont{
@@ -38,7 +39,7 @@ header{
     font-size: 15px;
 }
 
-.headercont img{
+.logo img{
     width: 150px;
     height: 40px;
 }
@@ -60,24 +61,44 @@ i{
 }
 
 .card{
-    width: 33%;
+    width: calc(33% - 5px);
     padding: 5px;
+    position: relative;
 }
 
 img{
     width: 100%;
 }
 
+.cornice{
+    position: relative;
+
+}
+
 .card p:last-child{
     color: red;
 }
 
-.card span{
+.card p span{
     color: black;
     text-decoration: line-through;
 }
 
+.sconto{
+    background-color: red;
+    color: white;
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+}
 
+.verde{
+    background-color: green;
+    color: white;
+    position: absolute;
+    bottom: 100px;
+    left: 40px;
+}
 /* footer */
 
 /*.footercont{
