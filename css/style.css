@@ -3,3 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* header */
+
+header{
+    background-color: #fe6900;
+    padding: auto;
+    max-width: 1700px;
+}
+
+.headercont{
+    
+}
