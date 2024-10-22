@@ -9,6 +9,9 @@
     display: flex;
 }
 
+.absolute{
+    position: absolute;
+}
 /* header */
 
 header{
@@ -56,6 +59,7 @@ i{
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -72,7 +76,8 @@ img{
 
 .cornice{
     position: relative;
-
+    width: 100%;
+    aspect-ratio: 2/3;
 }
 
 .card p:last-child{
@@ -83,6 +88,15 @@ img{
     color: black;
     text-decoration: line-through;
 }
+
+.vestito{
+    opacity: 0;
+}
+
+.cornice:hover .vestito{
+    opacity: 1;
+}
+
 
 .sconto{
     background-color: red;
@@ -99,26 +113,23 @@ img{
     bottom: 100px;
     left: 40px;
 }
+
 /* footer */
 
-/*.footercont{
-    justify-content: space-around;
-    width: 1300px;
+footer{
     background-color: #1a1a1a;
-    color: white;
-    position: fixed;
-    bottom: 0;
 }
 
-li{
+.footercont{
+    max-width: 900px;
+    color: white;
+    justify-content: space-between;
+}
+
+.footercont ol li{
+    flex-wrap: wrap;
     list-style: none;
-    font-size: 10px;
     display: inline-block;
-}
-a{
-    text-decoration: none;
-}
-
-.footercont a{
-    color: white;
+    padding: 2px;
+    font-size: 10px;
 }
